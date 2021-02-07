@@ -1,8 +1,8 @@
 <div *ngFor="let project of projects">
   <div class="display-4">{{ project.name }}</div>
   {{ project.description }}
-  <ul *ngFor="let projectTask of project.tasks">
-    <li>
+  <ul class="list-group" *ngFor="let projectTask of project.tasks">
+    <li class="list-group-item">
       {{ projectTask.content }}
     </li>
   </ul>

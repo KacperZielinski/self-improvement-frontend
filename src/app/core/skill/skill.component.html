@@ -1,9 +1,11 @@
-<div *ngFor="let skill of skills">
-  {{ skill.skillName }}
-  {{ skill.skillType }}
-  <ul *ngFor="let skillPart of skill.skills">
-    <li>
-      <app-skill-part [skillPart]="skillPart"></app-skill-part>
-    </li>
-  </ul>
+<div class="row">
+  <div *ngFor="let skill of skills">
+    <div class="display-4">{{ skill.skillName }}</div>
+    {{ skill.skillType }}
+    <ul class="list-group" *ngFor="let skillPart of skill.skills">
+      <li class="list-group-item">
+        <app-skill-part [skillPart]="skillPart"></app-skill-part>
+      </li>
+    </ul>
+  </div>
 </div>
