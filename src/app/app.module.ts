@@ -8,6 +8,7 @@ import { SkillPartComponent } from './core/skill-part/skill-part.component';
 import { ProjectComponent } from './core/project/project.component';
 import { ProjectDetailsComponent } from './core/project-details/project-details.component';
 import { NavbarComponent } from './navbar/navbar/navbar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { NavbarComponent } from './navbar/navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
