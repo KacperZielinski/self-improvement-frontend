@@ -1,7 +1,7 @@
 <div class="row">
   <div *ngFor="let skill of skills">
     <div class="display-4">{{ skill.skillName }}</div>
-    {{ skill.skillType }}
+    Type: {{ skill.skillType.toString() }}
     <ul class="list-group" *ngFor="let skillPart of skill.skills">
       <li class="list-group-item">
         <app-skill-part [skillPart]="skillPart"></app-skill-part>

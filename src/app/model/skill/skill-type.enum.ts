@@ -1,7 +1,7 @@
 export enum SkillType {
-  BACKEND,
-  FRONTEND,
-  DEVOPS,
-  CLOUD,
-  OTHER
+  BACKEND = 'Backend',
+  FRONTEND = 'Frontend',
+  DEVOPS = 'DevOps',
+  CLOUD = 'Cloud',
+  OTHER = 'Other'
 }
