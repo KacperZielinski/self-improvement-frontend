@@ -92,6 +92,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "self-improvement-frontend"
+    }
+  },
+  "defaultProject": "self-improvement-frontend",
+  "cli": {
+    "analytics": false
+  }
 }
