@@ -1,1 +1,9 @@
-<p>skill works!</p>
+<div *ngFor="let skill of skills">
+  {{ skill.skillName }}
+  {{ skill.skillType }}
+  <ul *ngFor="let skillPart of skill.skills">
+    <li>
+      <app-skill-part [skillPart]="skillPart"></app-skill-part>
+    </li>
+  </ul>
+</div>
