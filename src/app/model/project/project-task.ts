@@ -1,7 +1,15 @@
 export class ProjectTask {
-  content: string;
+  private _task: string;
 
   constructor(content: string) {
-    this.content = content;
+    this._task = content;
+  }
+
+  get task(): string {
+    return this._task;
+  }
+
+  set task(value: string) {
+    this._task = value;
   }
 }

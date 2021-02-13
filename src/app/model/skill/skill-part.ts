@@ -1,12 +1,12 @@
 export class SkillPart {
   private _id: number;
-  private _taskName: string;
-  private _isDone: boolean;
+  private _task: string;
+  private _done: boolean;
 
   constructor(id: number, taskName: string, isDone: boolean) {
     this._id = id;
-    this._taskName = taskName;
-    this._isDone = isDone;
+    this._task = taskName;
+    this._done = isDone;
   }
 
   get id(): number {
@@ -17,19 +17,19 @@ export class SkillPart {
     this._id = value;
   }
 
-  get taskName(): string {
-    return this._taskName;
+  get task(): string {
+    return this._task;
   }
 
-  set taskName(value: string) {
-    this._taskName = value;
+  set task(value: string) {
+    this._task = value;
   }
 
-  get isDone(): boolean {
-    return this._isDone;
+  get done(): boolean {
+    return this._done;
   }
 
-  set isDone(value: boolean) {
-    this._isDone = value;
+  set done(value: boolean) {
+    this._done = value;
   }
 }
